@@ -60,11 +60,7 @@ namespace Week2Test
             #region TEST ECCEZIONI
             Warehouse warehouse2 = new Warehouse() 
             {
-                ID = Guid.NewGuid(),
                 
-                ImportoTotaleMerci = 560.34,
-                DataUltimaOperazione = DateTime.Today,
-                MerciInGiacenza = new List<Good>()
             };
             #endregion
         }
