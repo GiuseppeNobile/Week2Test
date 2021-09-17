@@ -1,0 +1,16 @@
+C:\Users\g.nobile\source\repos\Week2Test\Week2Test\bin\Debug\net5.0\Week2Test.exe
+C:\Users\g.nobile\source\repos\Week2Test\Week2Test\bin\Debug\net5.0\Week2Test.deps.json
+C:\Users\g.nobile\source\repos\Week2Test\Week2Test\bin\Debug\net5.0\Week2Test.runtimeconfig.json
+C:\Users\g.nobile\source\repos\Week2Test\Week2Test\bin\Debug\net5.0\Week2Test.runtimeconfig.dev.json
+C:\Users\g.nobile\source\repos\Week2Test\Week2Test\bin\Debug\net5.0\Week2Test.dll
+C:\Users\g.nobile\source\repos\Week2Test\Week2Test\bin\Debug\net5.0\ref\Week2Test.dll
+C:\Users\g.nobile\source\repos\Week2Test\Week2Test\bin\Debug\net5.0\Week2Test.pdb
+C:\Users\g.nobile\source\repos\Week2Test\Week2Test\obj\Debug\net5.0\Week2Test.csproj.AssemblyReference.cache
+C:\Users\g.nobile\source\repos\Week2Test\Week2Test\obj\Debug\net5.0\Week2Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\g.nobile\source\repos\Week2Test\Week2Test\obj\Debug\net5.0\Week2Test.AssemblyInfoInputs.cache
+C:\Users\g.nobile\source\repos\Week2Test\Week2Test\obj\Debug\net5.0\Week2Test.AssemblyInfo.cs
+C:\Users\g.nobile\source\repos\Week2Test\Week2Test\obj\Debug\net5.0\Week2Test.csproj.CoreCompileInputs.cache
+C:\Users\g.nobile\source\repos\Week2Test\Week2Test\obj\Debug\net5.0\Week2Test.dll
+C:\Users\g.nobile\source\repos\Week2Test\Week2Test\obj\Debug\net5.0\ref\Week2Test.dll
+C:\Users\g.nobile\source\repos\Week2Test\Week2Test\obj\Debug\net5.0\Week2Test.pdb
+C:\Users\g.nobile\source\repos\Week2Test\Week2Test\obj\Debug\net5.0\Week2Test.genruntimeconfig.cache
