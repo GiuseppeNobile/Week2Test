@@ -20,8 +20,16 @@ namespace Week2Test
                               DateTime scad, PlaceToStore cons) 
                             : base(code, desc, price, datar, quant)
         {
-            DataScadenza = scad;
-            Conservazione = cons;
+            try
+            {
+                DataScadenza = scad;
+                Conservazione = cons;
+            }
+            catch
+            {
+                throw new InvalidGoodException();
+            }
+            
         }
         #endregion
 

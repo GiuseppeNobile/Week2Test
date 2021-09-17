@@ -19,8 +19,16 @@ namespace Week2Test
                                int grad, AlcoholType t)
                             : base(code, desc, price, datar, quant)
         {
-            GradazioneAlcolica = grad;
-            Tipo = t;
+            try 
+            {
+                GradazioneAlcolica = grad;
+                Tipo = t;
+            }
+            catch
+            {
+                throw new InvalidGoodException();
+            }
+            
         }
         #endregion
 

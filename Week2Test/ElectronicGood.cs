@@ -15,8 +15,13 @@ namespace Week2Test
         #region CONSTRUCTORS        
         public ElectronicGood(string code, string desc, double price, DateTime datar , int quant, string prod) 
                             : base(code, desc, price, datar, quant)
-        {            
-            Produttore = prod;
+        {
+            try { Produttore = prod; }
+            catch
+            {
+                throw new InvalidGoodException();
+            }
+            
         }
 
         

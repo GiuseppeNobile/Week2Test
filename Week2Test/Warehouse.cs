@@ -20,11 +20,19 @@ namespace Week2Test
         public Warehouse() { }
         public Warehouse(Guid id, string address, double total, DateTime operation, List<Good> list) : base()
         {
-            ID = id;
-            Indirizzo = address;
-            ImportoTotaleMerci = total;
-            DataUltimaOperazione = operation;
-            MerciInGiacenza = list;
+            try
+            {
+                ID = id;
+                Indirizzo = address;
+                ImportoTotaleMerci = total;
+                DataUltimaOperazione = operation;
+                MerciInGiacenza = list;
+            }
+            catch 
+            {
+                throw new InvalidWarehouseException();
+            }
+            
         }
         #endregion
 
