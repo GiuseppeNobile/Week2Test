@@ -28,11 +28,11 @@ namespace Week2Test
                 DataUltimaOperazione = operation;
                 MerciInGiacenza = list;
             }
-            catch 
+            catch (InvalidWarehouseException e)
             {
-                throw new InvalidWarehouseException();
+                throw;
             }
-            
+
         }
         #endregion
 

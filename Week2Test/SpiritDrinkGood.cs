@@ -24,11 +24,11 @@ namespace Week2Test
                 GradazioneAlcolica = grad;
                 Tipo = t;
             }
-            catch
+            catch (InvalidGoodException e)
             {
-                throw new InvalidGoodException();
+                throw;
             }
-            
+
         }
         #endregion
 

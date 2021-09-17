@@ -8,9 +8,18 @@ namespace Week2Test
 {
     public class InvalidGoodException : Exception
     {
-        public InvalidGoodException() 
+        
+        public InvalidGoodException() : base()
         {
-            Console.WriteLine("Oggetto Good non valido, ricontrollare gli attributi");
+
+        }
+        public InvalidGoodException(string message) : base(message)
+        {
+            
+        }
+        public InvalidGoodException(string message, Exception innerException) : base(message, innerException)
+        {
+
         }
     }
 }

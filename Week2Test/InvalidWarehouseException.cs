@@ -10,7 +10,7 @@ namespace Week2Test
     {
         public InvalidWarehouseException()
         {
-            Console.WriteLine("Oggetto Warehouse non valido, ricontrollare gli attributi");
+            
         }
     }
 }

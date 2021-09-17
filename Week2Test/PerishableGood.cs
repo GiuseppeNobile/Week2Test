@@ -25,11 +25,11 @@ namespace Week2Test
                 DataScadenza = scad;
                 Conservazione = cons;
             }
-            catch
+            catch (InvalidGoodException e)
             {
-                throw new InvalidGoodException();
+                throw;
             }
-            
+
         }
         #endregion
 

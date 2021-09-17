@@ -17,9 +17,9 @@ namespace Week2Test
                             : base(code, desc, price, datar, quant)
         {
             try { Produttore = prod; }
-            catch
+            catch(InvalidGoodException e)
             {
-                throw new InvalidGoodException();
+                throw;
             }
             
         }

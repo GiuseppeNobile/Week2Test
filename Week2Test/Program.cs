@@ -9,7 +9,7 @@ namespace Week2Test
     class Program
     {
         static void Main(string[] args)
-        {
+        {/*
             #region CREAZIONE WAREHOUSE
             Warehouse warehouse1 = new Warehouse()
             {
@@ -55,6 +55,17 @@ namespace Week2Test
 
             warehouse1.StockList();
 
+            #endregion
+            */
+            #region TEST ECCEZIONI
+            Warehouse warehouse2 = new Warehouse() 
+            {
+                ID = Guid.NewGuid(),
+                
+                ImportoTotaleMerci = 560.34,
+                DataUltimaOperazione = DateTime.Today,
+                MerciInGiacenza = new List<Good>()
+            };
             #endregion
         }
     }

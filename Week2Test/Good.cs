@@ -28,11 +28,11 @@ namespace Week2Test
                 DataDiRicevimento = datar;
                 QuantitaInGiacenza = quant;
             }
-            catch 
+            catch (InvalidGoodException e)
             {
-                throw new InvalidGoodException();
+                throw;
             }
-            
+
         }
         #endregion
 
