@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Week2Test
 {
-    public class Good
+    public abstract class Good
     {
         #region PROPERTIES
         public string CodiceMerce { get; set; }
