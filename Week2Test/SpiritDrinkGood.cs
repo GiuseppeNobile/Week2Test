@@ -27,8 +27,6 @@ namespace Week2Test
         #region METHODS
         public override string ToString()
         {
-            Console.WriteLine($"Codice merce \tDescrizione \tPrezzo \tData di ricevimento \tQuantità in giacenza " +
-                              $"Gradazione alcolica \tTipo \n");
             return $"{CodiceMerce} \t {Descrizione} \t{Prezzo} \t{DataDiRicevimento} \t{QuantitaInGiacenza} " +
                    $"\t{GradazioneAlcolica} {Tipo}";
         }

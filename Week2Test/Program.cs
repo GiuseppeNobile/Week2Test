@@ -36,15 +36,26 @@ namespace Week2Test
             Good spirit1 = new SpiritDrinkGood
                            ("S001", "Vodka alla fragola", 12.55, DateTime.Today, 34, 7, SpiritDrinkGood.AlcoholType.VODKA);
             Good spirit2 = new SpiritDrinkGood
-                           ("S001", "Whisky doppio malto", 22.40, DateTime.Today, 67, 9, SpiritDrinkGood.AlcoholType.WHISKY);
+                           ("S002", "Whisky doppio malto", 22.40, DateTime.Today, 67, 9, SpiritDrinkGood.AlcoholType.WHISKY);
 
             #endregion
 
-            electronic1.ToString();
+            #region AGGIUNTA E RIMOZIONE DI OGGETTI
+            warehouse1 += electronic1;
+            warehouse1 += electronic2;
+            warehouse1 += perishable1;
+            warehouse1 += perishable2;
+            warehouse1 += spirit1;
+            warehouse1 += spirit2;
 
-            //warehouse1 + electronic1;
+            warehouse1.StockList();
 
-            //warehouse1.StockList();
+            warehouse1 -= perishable1;
+            warehouse1 -= electronic2;
+
+            warehouse1.StockList();
+
+            #endregion
         }
     }
 }
