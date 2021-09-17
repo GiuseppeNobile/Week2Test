@@ -18,7 +18,6 @@ namespace Week2Test
                 ImportoTotaleMerci = 560.34,
                 DataUltimaOperazione = DateTime.Today,
                 MerciInGiacenza = new List<Good>()
-
             };            
             #endregion
 
