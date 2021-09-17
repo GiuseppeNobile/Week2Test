@@ -9,7 +9,7 @@ namespace Week2Test
     public class Warehouse
     {
         #region PROPERTIES
-        public Guid ID { get; }
+        public Guid ID { get; set; }
         public string Indirizzo { get; set; }
         public double ImportoTotaleMerci { get; set; }
         public DateTime DataUltimaOperazione { get; set; }
@@ -42,15 +42,15 @@ namespace Week2Test
         #endregion
 
         #region METHODS
-        public void StockList(Warehouse warehouse)
+        public void StockList()
         {
             int i; //contatore per la lista di merci
 
-            Console.WriteLine($"Dati del magazzino {warehouse}:\n");
-            Console.WriteLine($"ID: \t{warehouse.ID}:\n");
-            Console.WriteLine($"Indirizzo: \t{warehouse.Indirizzo}:\n");
-            Console.WriteLine($"Importo totale merci: \t{warehouse.ImportoTotaleMerci}:\n");
-            Console.WriteLine($"Data ultima operazione: \t{warehouse.DataUltimaOperazione}:\n");
+            Console.WriteLine($"Dati del magazzino:\n");
+            Console.WriteLine($"ID: \t{ID}:\n");
+            Console.WriteLine($"Indirizzo: \t{Indirizzo}:\n");
+            Console.WriteLine($"Importo totale merci: \t{ImportoTotaleMerci}:\n");
+            Console.WriteLine($"Data ultima operazione: \t{DataUltimaOperazione}:\n");
             Console.WriteLine("Merci in giacenza: \n");
             
             for(i=0; i < MerciInGiacenza.Count(); i++)

@@ -9,7 +9,7 @@ namespace Week2Test
     public class Good
     {
         #region PROPERTIES
-        public Guid CodiceMerce { get; set; }
+        public string CodiceMerce { get; set; }
         public string Descrizione { get; set; }
         public double Prezzo { get; set; }
         public DateTime DataDiRicevimento { get; set; }
@@ -18,7 +18,7 @@ namespace Week2Test
 
         #region CONSTRUCTORS      
         public Good() { }
-        public Good(Guid code, string desc, double price, DateTime datar, int quant) : base()
+        public Good(string code, string desc, double price, DateTime datar, int quant) : base()
         {
             CodiceMerce = code;
             Descrizione = desc;

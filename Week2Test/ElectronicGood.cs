@@ -12,13 +12,14 @@ namespace Week2Test
         public string Produttore { get; set; }
         #endregion
 
-        #region CONSTRUCTORS
-        public ElectronicGood(Guid code, string desc, double price, DateTime datar , int quant, string prod) 
+        #region CONSTRUCTORS        
+        public ElectronicGood(string code, string desc, double price, DateTime datar , int quant, string prod) 
                             : base(code, desc, price, datar, quant)
-        {
-
+        {            
             Produttore = prod;
         }
+
+        
         #endregion
 
         #region METHODS

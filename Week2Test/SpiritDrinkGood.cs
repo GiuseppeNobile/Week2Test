@@ -15,7 +15,7 @@ namespace Week2Test
         #endregion
 
         #region CONSTRUCTORS
-        public SpiritDrinkGood(Guid code, string desc, double price, DateTime datar, int quant, 
+        public SpiritDrinkGood(string code, string desc, double price, DateTime datar, int quant, 
                                int grad, AlcoholType t)
                             : base(code, desc, price, datar, quant)
         {

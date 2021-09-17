@@ -16,7 +16,7 @@ namespace Week2Test
         #endregion
 
         #region CONSTRUCTORS
-        public PerishableGood(Guid code, string desc, double price, DateTime datar, int quant, 
+        public PerishableGood(string code, string desc, double price, DateTime datar, int quant, 
                               DateTime scad, PlaceToStore cons) 
                             : base(code, desc, price, datar, quant)
         {
@@ -28,7 +28,7 @@ namespace Week2Test
         #region METHODS
         public override string ToString()
         {
-            Console.WriteLine($"Codice merce \tDescrizione \tPrezzo \tData di ricevimento \tQuantità in giacenza, " +
+            Console.WriteLine($"Codice merce \tDescrizione \tPrezzo \tData di ricevimento \tQuantità in giacenza " +
                               $"\tData di scadenza \tConservazione \n");
             return $"{CodiceMerce} \t {Descrizione} \t{Prezzo} \t{DataDiRicevimento} \t{QuantitaInGiacenza} " +
                    $"\t{DataScadenza} \t{Conservazione}";

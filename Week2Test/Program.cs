@@ -10,20 +10,41 @@ namespace Week2Test
     {
         static void Main(string[] args)
         {
-            #region Test creazione warehouse
+            #region CREAZIONE WAREHOUSE
             Warehouse warehouse1 = new Warehouse()
             {
+                ID = Guid.NewGuid(),
                 Indirizzo = "via Dante 51",
                 ImportoTotaleMerci = 560.34,
                 DataUltimaOperazione = DateTime.Today,
                 MerciInGiacenza = new List<Good>()
 
-            };
-
-            Console.WriteLine($"{warehouse1.ID}");
+            };            
             #endregion
 
+            #region CREAZIONE GOODS
+            Good electronic1 = new ElectronicGood
+                               ("E001", "Smatrphone", 340.99, DateTime.Today, 123, "Samsung");
+            Good electronic2 = new ElectronicGood
+                               ("E002", "Tablet", 120.50, DateTime.Today, 90, "LG");
 
+            Good perishable1 = new PerishableGood
+                               ("P001", "Carote", 4.50, DateTime.Today, 56, DateTime.Today, PerishableGood.PlaceToStore.FRIDGE);
+            Good perishable2 = new PerishableGood
+                               ("P002", "Carne in scatola", 4.50, DateTime.Today, 45, DateTime.Today, PerishableGood.PlaceToStore.SHELF);
+
+            Good spirit1 = new SpiritDrinkGood
+                           ("S001", "Vodka alla fragola", 12.55, DateTime.Today, 34, 7, SpiritDrinkGood.AlcoholType.VODKA);
+            Good spirit2 = new SpiritDrinkGood
+                           ("S001", "Whisky doppio malto", 22.40, DateTime.Today, 67, 9, SpiritDrinkGood.AlcoholType.WHISKY);
+
+            #endregion
+
+            electronic1.ToString();
+
+            //warehouse1 + electronic1;
+
+            //warehouse1.StockList();
         }
     }
 }
